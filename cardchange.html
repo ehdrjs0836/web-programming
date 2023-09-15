@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bgimg {
+            width: 260px;
+            height: 379px;
+            border: 1px solid black;
+            background-image: URL("img/cardback.jpg");
+            background-size: 100px;
+            background-repeat: repeat-y;
+            background-position: center center;
+        }
+        #bgimg:hover {
+            background-image: URL("img/cardfront.PNG");
+        }
+        #bgimg:active {
+            background-image: URL("img/jocker.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div id="bgimg">
+    </div>
+</body>
+</html>
