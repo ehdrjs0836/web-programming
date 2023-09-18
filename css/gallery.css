@@ -1,0 +1,22 @@
+body{
+    background-color: #EEEEEE;
+}
+#wrapper {
+    background-color: #EEEEEE;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-rows: minmax(2fr, auto);
+}
+
+.card {
+    background-color: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+h3 {
+    font-size: 1.8rem;
+    padding-bottom: 25px;
+}
