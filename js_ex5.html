@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function randInt() {
+            return Math.floor(Math.random()*9) + 1;
+        }
+    </script>
+</head>
+<body>
+    <h3>구구단 연습하기</h3>
+    <hr>
+    <script>
+        let x = randInt();
+        let y = randInt();
+        let ans = x*y;
+        let str = x +"*" + y + "의 값은 얼마입니까?";
+        let res = prompt(str);
+        if(res != null && !isNaN(res)) {
+            res = parseInt(res);
+            if(res == ans) {
+                document.write("정답");
+            } else {
+                document.write("오답");
+            }
+        } else {
+            document.write("구구단 연습을 종료합니다.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 객체 만들기</title>
+</head>
+<body>
+    <h3>new object()로 사용자 객체 만들기</h3>
+    <hr>
+    <script>
+        // account.code = "111";
+        // account.owner = "홍길동";
+        // account.balance = 35000;
+        // account.inquiry = inquiry;
+        // account.withdraw = withdraw;
+        // account.deposit = deposit;
+        
+        function account(code,owner,balance) {
+            this.code = code;
+            this.owner = owner;
+            this.balance = balance;
+            this.inquiry = function() {
+                return this.balance;
+            }
+            this.withdraw = function(balance) {
+                return this.balance -= balance;
+            }
+            this.deposit = function(balance) {
+                return this.balance += balance;
+            }
+        }
+        let user = new account("111","홍길동",35000);
+        document.write(user.code  + "<br>");
+        document.write(user.owner  + "<br>");
+        document.write(user.balance  + "<br>");
+        document.write(user.inquiry() + "<br>");
+        document.write(user.withdraw(10000) + "<br>");
+        document.write(user.deposit(10000) + "<br>");
+    </script>
+</body>
+</html>

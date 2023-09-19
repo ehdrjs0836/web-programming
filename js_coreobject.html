@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let today = new Date();
+
+        document.write("현재시간 : "+ today.toLocaleTimeString() + "<br>");
+        
+        let str = new String("hello world");
+
+        document.write(str + "은" + str.length + "입니다.");
+
+        let citis = ["seoul", "new york", "paris"];
+        for(let i = 0; i < citis.length; i++) {
+            console.log(citis[i]);
+        }
+
+        let numbers = [0,1,2,3,4];
+        numbers[5] = 5;
+        numbers[6] = 6;
+        for(let i = 0; i < numbers.length; i++) {
+            console.log(numbers[i]);
+        }
+
+        numbers.length = 10;
+        for(let i = 0; i < numbers.length; i++) {
+            console.log(numbers[i]);
+        }
+    </script>
+</body>
+</html>
