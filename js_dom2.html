@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>innerHTML 변경하기</title>
+    <script>
+        // p 태그를 변경하면 innerHTML을 img 태그로 변경하기
+        function change(p) {
+            //let p = document.querySelector("p");
+            p.innerHTML = "<img src='img/jejudo.jpg' width='300px' height='200px'>"
+        }
+    </script>
+</head>
+<body>
+    <h3>innerHTML 변경하기</h3>
+    <hr>
+    <p onclick="change(this)">
+        여기를
+        <span style="color: red;">
+            클릭하세요.
+        </span>
+    </p>
+</body>
+</html>

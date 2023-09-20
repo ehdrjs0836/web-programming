@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this 활용하기</title>
+    <script>
+        // 객체를 매개변수로 하는 함수
+        function change(obj,color,fontSize) {
+            obj.style.color = color;
+            obj.style.fontSize = fontSize;
+        }
+    </script>
+</head>
+<body>
+    <h3>this 활용하기</h3>
+    <hr>
+    <button onclick="change(this,'red','30px')">버튼1</button>
+    <button onclick="change(this,'orange','40px')">버튼2</button>
+    <div onclick="change(this,'yellow','50px')">
+        여기를 클릭하면 크기와 색이 변경됩니다.
+    </div>
+</body>
+</html>

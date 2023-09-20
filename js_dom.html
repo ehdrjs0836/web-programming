@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>구조 출력</title>
+</head>
+<body>
+    <h3>DOM객체 p의 프로퍼티,스타일,이벤트 리스너</h3>
+    <hr>
+    <p id="firstP" 
+        style="color: blue; background-color: yellow;"
+        onclick="this.style.backgroundColor = 'white'">
+        이것은
+        <span style="color: red;">
+            처음 문장 입니다.
+        </span>
+    </p>
+    <p id="secondP" 
+        style="color: blue; background-color: yellow;"
+        onclick="this.style.backgroundColor = 'white'">
+        이것은
+        <span style="color: red;">
+            다음 문장 입니다.
+        </span>
+    </p>
+    <script>
+        const p = document.querySelector("#firstP");
+        document.write(`id = ${p.id} <br>`);
+        document.write(`tagName = ${p.tagName} <br>`);
+        document.write(`innerHTML = ${p.innerHTML} <br>`);
+        document.write(`style = ${p.style.color} <br>`);
+        document.write(`childElementCount = ${p.childElementCount} <br>`);
+        document.write(`onclick = ${p.onclick} <br>`);
+
+        const p2 = document.querySelector("#secondP");
+        document.write(`id = ${p2.id} <br>`);
+        document.write(`tagName = ${p2.tagName} <br>`);
+        document.write(`innerHTML = ${p2.innerHTML} <br>`);
+        document.write(`style = ${p2.style.color} <br>`);
+        document.write(`childElementCount = ${p2.childElementCount} <br>`);
+        document.write(`onclick = ${p2.onclick} <br>`);
+    </script>
+</body>
+</html>

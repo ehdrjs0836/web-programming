@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clone(obj) {
+            let name = document.order.name.value;
+            let phone = document.order.phone.value;
+            let address = document.order.address.value;
+            document.delivery.name.value = name;
+            document.delivery.phone.value = phone;
+            document.delivery.address.value = address;
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="order">
+        이름:<input type="text" name="이름" id="name" placeholder="이름을 입력하시오.">
+        전화번호:<input type="tel" name="전화번호" id="phone" placeholder="전화번호를 입력하시오.">
+        주소:<input type="address" name="주소" id="address" placeholder="주소를 입력하시오."><br>
+        <input type="checkbox" value="" id="checkbox" name="체크박스" onchange="clone(this)">
+        <label for="체크박스">주문자의 정보와 동일하면 체크하세요.</label>
+    </form>
+    
+    <form action="" name="delivery">
+        이름:<input type="text" name="이름" id="name" placeholder="이름을 입력하시오.">
+        전화번호:<input type="tel" name="전화번호" id="phone" placeholder="전화번호를 입력하시오.">
+        주소:<input type="address" name="주소" id="address" placeholder="주소를 입력하시오.">
+    </form>
+</body>
+</html>
